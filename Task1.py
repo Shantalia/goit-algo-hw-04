@@ -13,8 +13,8 @@ def total_salary(path):
     result = (salary_sum, salary_average)
     return result
 
-path = 'Developer.txt'
+path = 'Developers.txt'
 try:
     print(total_salary(path))
 except FileNotFoundError:
-    print('No such file')
+    print('No such file or it damaged')
