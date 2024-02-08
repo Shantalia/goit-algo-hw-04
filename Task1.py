@@ -2,7 +2,7 @@
 def total_salary(path):
     salary_sum = 0
     salary_average = 0
-    with open('Developers.txt', 'r') as doc:
+    with open(path, 'r') as doc:
         lines = [el.strip() for el in doc.readlines()]
         salaries = []
         for line in lines:
@@ -13,5 +13,8 @@ def total_salary(path):
     result = (salary_sum, salary_average)
     return result
 
-path = 'Developers.txt'
-print(total_salary(path))
+path = 'Developer.txt'
+try:
+    print(total_salary(path))
+except FileNotFoundError:
+    print('No such file')
