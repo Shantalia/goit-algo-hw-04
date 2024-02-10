@@ -1,7 +1,4 @@
-john 47365835
-fifi 3453535
-lolo 123
-fofo 333333
-mimi 000000
-lili 2313
-koko 000
+John 47365835
+Kate 9934567
+Mike 3452677
+Lucy 1234355
